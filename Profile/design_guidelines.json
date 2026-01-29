@@ -1,0 +1,133 @@
+{
+  "design_strategy": {
+    "identity": "The Modern Architect",
+    "core_concept": "Swiss Clarity meets Code Editor Aesthetics. A portfolio that feels like a well-structured codebase: clean, efficient, and powerful.",
+    "emotional_tone": "Professional, Eager, Adaptive, Technical",
+    "archetype": "The Performance Pro (Archetype 2) mixed with Swiss High-Contrast (Archetype 4)",
+    "visual_style": "Clean professional UI with soft blue accents. High readability, generous whitespace, and subtle motion."
+  },
+  "typography": {
+    "primary_font": "Outfit",
+    "secondary_font": "Inter",
+    "mono_font": "JetBrains Mono",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+      "h3": "text-xl md:text-2xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-400",
+      "caption": "text-sm font-mono text-slate-500 uppercase tracking-wider"
+    }
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "primary": {
+        "DEFAULT": "#3B82F6",
+        "hover": "#2563EB",
+        "foreground": "#FFFFFF"
+      },
+      "background": {
+        "light": "#F8FAFC",
+        "dark": "#020617"
+      },
+      "surface": {
+        "light": "#FFFFFF",
+        "dark": "#0F172A"
+      },
+      "accent": {
+        "light": "#E0F2FE",
+        "dark": "#1E293B"
+      },
+      "text": {
+        "main": "#0F172A",
+        "muted": "#64748B"
+      }
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-900 dark:to-slate-800",
+      "card_hover": "hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300"
+    }
+  },
+  "layout_system": {
+    "grid_strategy": "Bento Grid (Mode A) for Projects and Skills",
+    "spacing": "Generous. Use p-8 to p-12 for section padding. Gap-6 to Gap-8 for grids.",
+    "container": "max-w-6xl mx-auto px-4 md:px-8",
+    "alignment": "Left-aligned headings for strong hierarchy. Asymmetrical balance in Hero section."
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-6 text-lg font-medium shadow-lg shadow-blue-500/20 hover:scale-105 transition-transform",
+      "secondary": "rounded-full px-8 py-6 text-lg font-medium border-2 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900"
+    },
+    "cards": {
+      "style": "bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-blue-200 dark:hover:border-blue-800 transition-colors",
+      "content_padding": "p-6 md:p-8"
+    },
+    "navigation": {
+      "style": "fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-950/80 border-b border-slate-200/50 dark:border-slate-800/50",
+      "items": "text-sm font-medium hover:text-blue-600 transition-colors"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "effects": {
+      "hero_entrance": "Fade up with stagger",
+      "scroll_reveal": "WhileInView: opacity 1, y: 0. Initial: opacity 0, y: 50",
+      "hover": "Scale 1.02, Shadow increase"
+    },
+    "smooth_scroll": "Lenis"
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_bg",
+        "url": "https://images.unsplash.com/photo-1636485043041-e1d05b9f0662?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Minimalist white workspace setup",
+        "usage": "Hero section background or side visual"
+      },
+      {
+        "category": "project_1",
+        "url": "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Coffee shop aesthetic for PHP project",
+        "usage": "Project card: Coffee Shop Website"
+      },
+      {
+        "category": "project_2",
+        "url": "https://images.unsplash.com/photo-1587745416684-479530166643?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Medical/Ambulance concept",
+        "usage": "Project card: Emergency Ambulance Booking"
+      },
+      {
+        "category": "project_3",
+        "url": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Music app vibes",
+        "usage": "Project card: Music App"
+      },
+      {
+        "category": "project_4",
+        "url": "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Fintech/Payment concept",
+        "usage": "Project card: GPay Clone"
+      }
+    ],
+    "icons": "Use react-icons (FaGithub, FaLinkedin, FaEnvelope, FaPhone, SiHtml5, SiCss3, SiJavascript, SiFlutter, SiDart, SiPhp, SiMysql, SiLinux, SiPython, SiCplusplus)"
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: The user asked for 'static HTML', but the environment is configured for React. You MUST build this as a React Single Page Application (SPA) to ensure it runs correctly in the provided container.",
+    "Implement a 'Dark/Light Mode' toggle using Tailwind's 'dark' class strategy.",
+    "Use 'lucide-react' or 'react-icons' for all icons.",
+    "Create a 'Resume' button that links to a dummy PDF path (e.g., '/resume.pdf') or opens a 'Coming Soon' toast.",
+    "Ensure the 'Skills' section uses a responsive grid or a wrapping flex layout with badges.",
+    "The 'Education' and 'Experience' sections should use a vertical timeline layout.",
+    "Use 'sonner' for the Contact form submission feedback (mocked).",
+    "Do NOT use purple or teal as primary colors. Stick to the Blue/Slate palette.",
+    "Ensure all text has sufficient contrast in both light and dark modes."
+  ],
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects for the navbar.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable."
+  ]
+}

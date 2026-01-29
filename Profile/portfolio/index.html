@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeel Barot - IT Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo-text">JB</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle fade-in">Hello, I'm</p>
+                <h1 class="hero-title fade-in-delay-1">Jeel Barot</h1>
+                <p class="hero-role fade-in-delay-2">IT Student</p>
+                <p class="hero-description fade-in-delay-3">
+                    IT student focused on web and mobile app development, eager to learn and work on real-world projects. Highly motivated and adaptive with strong technical skills.
+                </p>
+                <div class="hero-buttons fade-in-delay-4">
+                    <a href="#projects" class="btn btn-primary" data-testid="view-projects-btn">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" data-testid="contact-me-btn">
+                        <span>Contact Me</span>
+                    </a>
+                    <a href="Resume.pdf" download class="btn btn-outline" data-testid="download-resume-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-delay-2">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1636485043041-e1d05b9f0662?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Workspace" />
+                    <div class="hero-image-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-testid="about-section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    IT student passionate about <strong>Web Development</strong> and <strong>Mobile App Development</strong>. Looking to grow as a full-stack developer and contribute to real-world applications.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">9.77</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Skills</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">4+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-testid="skills-section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-testid="skill-html">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <span class="skill-name">HTML</span>
+                </div>
+                <div class="skill-card" data-testid="skill-css">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <span class="skill-name">CSS</span>
+                </div>
+                <div class="skill-card" data-testid="skill-javascript">
+                    <i class="fab fa-js skill-icon"></i>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-card" data-testid="skill-c">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span class="skill-name">C</span>
+                </div>
+                <div class="skill-card" data-testid="skill-cpp">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span class="skill-name">C++</span>
+                </div>
+                <div class="skill-card" data-testid="skill-csharp">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span class="skill-name">C#</span>
+                </div>
+                <div class="skill-card" data-testid="skill-dotnet">
+                    <i class="fas fa-laptop-code skill-icon"></i>
+                    <span class="skill-name">.NET</span>
+                </div>
+                <div class="skill-card" data-testid="skill-php">
+                    <i class="fab fa-php skill-icon"></i>
+                    <span class="skill-name">PHP</span>
+                </div>
+                <div class="skill-card" data-testid="skill-linux">
+                    <i class="fab fa-linux skill-icon"></i>
+                    <span class="skill-name">Linux</span>
+                </div>
+                <div class="skill-card" data-testid="skill-sql">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span class="skill-name">SQL</span>
+                </div>
+                <div class="skill-card" data-testid="skill-oracle">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span class="skill-name">Oracle</span>
+                </div>
+                <div class="skill-card" data-testid="skill-java">
+                    <i class="fab fa-java skill-icon"></i>
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-card" data-testid="skill-python">
+                    <i class="fab fa-python skill-icon"></i>
+                    <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-card" data-testid="skill-dart">
+                    <i class="fas fa-code skill-icon"></i>
+                    <span class="skill-name">Dart</span>
+                </div>
+                <div class="skill-card" data-testid="skill-flutter">
+                    <i class="fas fa-mobile-alt skill-icon"></i>
+                    <span class="skill-name">Flutter</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <h2 class="section-title" data-testid="education-section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 – 2026</div>
+                        <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+                        <p class="timeline-subtitle">Charotar University of Science and Technology (CHARUSAT)</p>
+                        <p class="timeline-description">CGPA: 9.77 (2nd Year)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 – 2023</div>
+                        <h3 class="timeline-title">12th HSC</h3>
+                        <p class="timeline-subtitle">Shah G. U. Higher Secondary School, Surat</p>
+                        <p class="timeline-description">Percentage: 88.15%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 – 2021</div>
+                        <h3 class="timeline-title">10th SSC</h3>
+                        <p class="timeline-subtitle">B.A. Patel High School, Changa</p>
+                        <p class="timeline-description">Percentage: 85.14%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-testid="experience-section-title">Experience</h2>
+            <div class="experience-card">
+                <div class="experience-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="experience-content">
+                    <h3 class="experience-title">Mobile App Development Intern</h3>
+                    <p class="experience-company">Appifly Infotech Pvt. Ltd., Surat</p>
+                    <p class="experience-tech">Flutter | Dart | Mobile Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="projects-section-title">Projects</h2>
+                <a href="https://github.com/Jeel00138" target="_blank" rel="noopener noreferrer" class="github-link" data-testid="github-profile-link">
+                    <i class="fab fa-github"></i>
+                    <span>View GitHub</span>
+                </a>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-testid="project-coffee-shop">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Coffee Shop Website" />
+                        <div class="project-overlay">
+                            <span class="project-tech">PHP</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Coffee Shop Website</h3>
+                        <p class="project-description">A fully functional e-commerce website for a coffee shop built using PHP.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-testid="project-ambulance">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1587745416684-479530166643?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Emergency Ambulance Booking" />
+                        <div class="project-overlay">
+                            <span class="project-tech">PHP</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Emergency Ambulance Booking</h3>
+                        <p class="project-description">Web application for booking emergency ambulance services quickly and efficiently.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-testid="project-music-app">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=srgb&fm=jpg&q=85" alt="Music App" />
+                        <div class="project-overlay">
+                            <span class="project-tech">Flutter</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Music App</h3>
+                        <p class="project-description">Cross-platform music application built with Flutter for seamless audio playback.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-testid="project-gpay-clone">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?crop=entropy&cs=srgb&fm=jpg&q=85" alt="GPay Clone UI" />
+                        <div class="project-overlay">
+                            <span class="project-tech">Flutter</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GPay Clone UI</h3>
+                        <p class="project-description">Pixel-perfect recreation of Google Pay's user interface using Flutter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-testid="contact-section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item" data-testid="contact-email">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Email</div>
+                            <a href="mailto:barotjeel35@gmail.com" class="contact-value">barotjeel35@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-testid="contact-phone">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Phone</div>
+                            <a href="tel:+917862066043" class="contact-value">+91 7862066043</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-testid="contact-location">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">Location</div>
+                            <div class="contact-value">Changa, Anand District, Gujarat</div>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-testid="contact-linkedin">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">LinkedIn</div>
+                            <a href="https://linkedin.com/in/jeel-barot" target="_blank" rel="noopener noreferrer" class="contact-value">Jeel Barot</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="languages-card">
+                    <h3 class="languages-title">Languages</h3>
+                    <div class="languages-list">
+                        <div class="language-badge">
+                            <i class="fas fa-language"></i>
+                            <span>Gujarati</span>
+                        </div>
+                        <div class="language-badge">
+                            <i class="fas fa-language"></i>
+                            <span>English</span>
+                        </div>
+                        <div class="language-badge">
+                            <i class="fas fa-language"></i>
+                            <span>Hindi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2026 Jeel Barot | All Rights Reserved</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Jeel00138" target="_blank" rel="noopener noreferrer" class="social-link" data-testid="footer-github-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jeel-barot" target="_blank" rel="noopener noreferrer" class="social-link" data-testid="footer-linkedin-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:barotjeel35@gmail.com" class="social-link" data-testid="footer-email-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
