@@ -474,12 +474,11 @@ body {
 }
 
 .skills-grid {
+   
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
-    
-    
-}
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+   }
 
 .skill-card {
     background-color: var(--color-background);
