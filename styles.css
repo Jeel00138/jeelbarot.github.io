@@ -474,10 +474,10 @@ body {
 }
 
 .skills-grid {
-   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
+    justify-content : center;
    }
 
 .skill-card {
@@ -995,4 +995,9 @@ body {
     .experience-icon {
         margin: 0 auto;
     }
+}
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 var(--spacing-container);
 }
