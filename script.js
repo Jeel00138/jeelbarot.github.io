@@ -172,7 +172,7 @@ const resumeBtn = document.querySelector('[data-testid="download-resume-btn"]');
 if (resumeBtn) {
     resumeBtn.addEventListener('click', (e) => {
         // Check if resume.pdf exists, otherwise show a notification
-        fetch('resume.pdf', { method: 'HEAD' })
+        fetch('/Resume.pdf', { method: 'HEAD' })
             .then(response => {
                 if (!response.ok) {
                     e.preventDefault();
