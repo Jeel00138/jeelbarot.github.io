@@ -591,16 +591,9 @@ body {
     background-color: var(--color-surface);
 }
 
-.experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.experience-card {
     max-width: 800px;
     margin: 0 auto;
-}
-
-.experience-card {
-    width: 100%;
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: 16px;
@@ -610,7 +603,6 @@ body {
     align-items: flex-start;
     transition: var(--transition-base);
 }
-
 .experience-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px var(--color-shadow);
@@ -629,7 +621,6 @@ body {
     color: white;
     flex-shrink: 0;
 }
-
 .experience-content {
     flex: 1;
 }
