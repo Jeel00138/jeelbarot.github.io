@@ -176,7 +176,7 @@ if (resumeBtn) {
             .then(response => {
                 if (!response.ok) {
                     e.preventDefault();
-                    showNotification('Resume will be available soon!', 'info');
+                    showNotification('Resume Downloaded!', 'info');
                 }
             })
             .catch(() => {
