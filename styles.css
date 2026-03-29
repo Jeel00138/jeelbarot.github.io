@@ -698,6 +698,13 @@ body {
     transition: var(--transition-base);
 }
 
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 50px var(--color-shadow);
@@ -755,6 +762,95 @@ body {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+/* Certifications Section */
+.certifications-section {
+    background-color: var(--color-background);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    transition: var(--transition-base);
+    overflow: hidden;
+}
+
+.cert-card-link {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 30px var(--color-shadow);
+}
+
+.cert-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    transition: var(--transition-base);
+}
+
+.cert-card:hover .cert-icon {
+    background: var(--color-primary);
+    color: white;
+}
+
+.cert-content {
+    flex: 1;
+}
+
+.cert-title {
+    font-family: var(--font-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--color-text-main);
+    line-height: 1.4;
+}
+
+.cert-issuer {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.cert-verify {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cert-verify i {
+    font-size: 0.75rem;
 }
 
 /* Contact Section */
@@ -1002,5 +1098,19 @@ body {
     
     .experience-icon {
         margin: 0 auto;
+    }
+
+    .cert-card-link {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .cert-icon {
+        margin: 0 auto;
+    }
+
+    .cert-verify {
+        justify-content: center;
     }
 }
